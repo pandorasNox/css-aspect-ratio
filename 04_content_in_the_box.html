@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>css-aspect-ratio</title>
+  <meta name="description" content="css-aspect-ratio">
+  <meta name="author" content="pandorasNox">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="normalize.css">
+
+</head>
+
+<body>
+  <!-- <script src="js/scripts.js"></script> -->
+
+    <div class="aspect-ratio-box">
+        <div class="aspect-ratio-inside">
+            <span>Happy Birthday</span>
+        </div>
+    </div>
+    <style>
+        .aspect-ratio-box {
+            height: 0;
+            padding-top: 56.25%;
+            background: red;
+            overflow: hidden;
+            position: relative;
+        }
+        .aspect-ratio-inside {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 5em;
+        }
+    </style>
+
+    <!-- <div class="aspect-ratio-box">
+        <div class="aspect-ratio-inside">
+            <div class="flexbox-centering">
+                <div class="viewport-sizing">
+                    <span>Happy Birthday</span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <style>
+        .flexbox-centering {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .viewport-sizing {
+            font-size: 10vmin;
+        }
+    </style>
+
+</body>
+</html>
